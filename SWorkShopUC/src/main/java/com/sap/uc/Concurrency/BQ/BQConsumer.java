@@ -9,10 +9,9 @@ public class BQConsumer implements Runnable{
 		this.cbq = cbq;
 	}
 
-	public void run() {
+	public synchronized void run() {
 
 //		System.out.println("Run Invoked for Consumer Thread with Thread Id "+ Thread.currentThread().getName());
-		for(int i =0; i<7;i++)
 			System.out.println("Removed element "+cbq.dequeue()+ " from the queue");
 	}
 	
