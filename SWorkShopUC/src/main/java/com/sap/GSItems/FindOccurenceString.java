@@ -3,7 +3,7 @@ package com.sap.GSItems;
 public class FindOccurenceString {
 
 	public static void main(String[] args) {
-		String st= "SSSSSTTPP";
+		String st= "SSSSSTTPPSS";
 		int counter =1;
 		for(int i = 1;i<st.length();i++){
 			for(int j=i;j<i+1;j++){
